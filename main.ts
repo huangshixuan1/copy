@@ -27,12 +27,6 @@ radio.onReceivedNumber(function (receivedNumber) {
         rightnow過年要破產()
     }
 })
-KSB045.onBtnChanged(KSB045.btnName.C, KSB045.pushType.down, function () {
-    backbackback海道()
-})
-KSB045.onBtnChanged(KSB045.btnName.D, KSB045.pushType.down, function () {
-    rightnow過年要破產()
-})
 function left旅遊啪啪造 () {
     pwm += 30
     if (pwm >= 255) {
@@ -84,25 +78,5 @@ function gogo宜得利 () {
     100
     )
 }
-KSB045.onBtnChanged(KSB045.btnName.F, KSB045.pushType.down, function () {
-    left旅遊啪啪造()
-})
-KSB045.onBtnChanged(KSB045.btnName.E, KSB045.pushType.down, function () {
-    gogo宜得利()
-})
 let pwm = 0
 radio.setGroup(1)
-basic.forever(function () {
-    if (KSB045.getJoystickValue(KSB045.valueType.X) < 0) {
-        radio.sendNumber(4)
-    }
-    if (KSB045.getJoystickValue(KSB045.valueType.X) > 0) {
-        radio.sendNumber(6)
-    }
-    if (KSB045.getJoystickValue(KSB045.valueType.Y) < 0) {
-        radio.sendNumber(2)
-    }
-    if (KSB045.getJoystickValue(KSB045.valueType.Y) > 0) {
-        radio.sendNumber(8)
-    }
-})
